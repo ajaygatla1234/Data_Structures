@@ -7,48 +7,49 @@ public class Singly_AddGivenNumberOf_LastNodes {
 	public static Scanner scanner = new Scanner(System.in);
 	public static int n;
 
+	// Method to add the values of last n nodes in the linked list
 	public static void addGivenNumberOfLastNodes(Node head, int n) {
 		
-		//First find the Number of Nodes present
+		// First find the Number of Nodes present
 		Node temp = head;
-		int count=0;
-		while(temp!=null) {
+		int count = 0;
+		while(temp != null) {
 			count++;
 			temp = temp.nextNode;
 		}
-		
+
 		//System.out.println(count);  Number of Nodes in linked list
 		
-		//Logic for adding last n number of nodes
-		Node temp1=head;
-		int count1=0;
-		int sum=0;
+		// Logic for adding last n number of nodes
+		Node temp1 = head;
+		int count1 = 0;
+		int sum = 0;
 		
-		while(temp1!=null) {
+		while(temp1 != null) {
 			count1++;
 			
-			if((count1>(count-n))) {
-				sum = sum+temp1.data;
+			if(count1 > (count - n)) {
+				sum = sum + temp1.data;
 			}
-			temp1=temp1.nextNode;
+			temp1 = temp1.nextNode;
 			
 		}
 		
 		System.out.println(sum);
 	}
 	
-
+	// Method to display the elements of the linked list
 	public static void display(Node headNode) {
 		Node currentNode = headNode;
-		while(currentNode!=null) {
-			System.out.print(currentNode.data+" ");
+		while(currentNode != null) {
+			System.out.print(currentNode.data + " ");
 			currentNode = currentNode.nextNode;
 		}
 	}
 
 	public static void main(String[] args) {
 
-		//Adding the data to the nodes
+		// Adding the data to the nodes
 		Node head = new Node(10);
 
 		Node secondNode = new Node(20);
@@ -59,7 +60,7 @@ public class Singly_AddGivenNumberOf_LastNodes {
 
 		Node fifthNode = new Node(50);
 
-		//Adding References
+		// Adding References
 		head.nextNode = secondNode;
 
 		secondNode.nextNode = thirdNode;
@@ -74,9 +75,9 @@ public class Singly_AddGivenNumberOf_LastNodes {
 		display(head);
 		
 		System.out.println("\n\nEnter Last Number of nodes to add");
-		n=scanner.nextInt();
+		n = scanner.nextInt();
 		
-		System.out.println("\nAdding last "+n+" Nodes gives :");
+		System.out.println("\nAdding last " + n + " Nodes gives :");
 		
 		addGivenNumberOfLastNodes(head, n);
 	}

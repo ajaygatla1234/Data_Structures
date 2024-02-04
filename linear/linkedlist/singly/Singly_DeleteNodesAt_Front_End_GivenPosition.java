@@ -4,25 +4,24 @@ public class Singly_DeleteNodesAt_Front_End_GivenPosition {
 	
 	static Node newHead = null;
 
-	//Deleting the Node at Front (head Node)
+	// Deleting the Node at Front (head Node)
 	public static Node deleteAtFront(Node head) {
 
 		head = head.nextNode;
 		return head;
 	}
 
-	//Deleting the Node at End
+	// Deleting the Node at End
 	public static void deleteAtEnd(Node head) {
 
-		//create a new node
+		// create a new node
 		Node current = head;
 
-		//if only head node is available, assign null to head
-		if(head.nextNode == null) {
+		// if only head node is available, assign null to head
+		if (head.nextNode == null) {
 			head = null;
-		}
-		else {
-			while(current.nextNode.nextNode!=null) {
+		} else {
+			while (current.nextNode.nextNode != null) {
 				current = current.nextNode;
 			}
 			current.nextNode = null;
@@ -30,34 +29,34 @@ public class Singly_DeleteNodesAt_Front_End_GivenPosition {
 
 	}
 
-	//Deleting the Node at given Position
-	public static void deleteAtGivenPosition(Node head, int key ) {
+	// Deleting the Node at given Position
+	public static void deleteAtGivenPosition(Node head, int key) {
 
-		//store head node
+		// store head node
 		Node temp = head;
 		Node prev = null;
-		
-		while(temp!=null && temp.data!=key) {
+
+		while (temp != null && temp.data != key) {
 			prev = temp;
 			temp = temp.nextNode;
 		}
 		prev.nextNode = temp.nextNode;
 	}
 
-	//Traverse the Nodes
+	// Traverse the Nodes
 	public static void display(Node node) {
 
-		while(node!=null) {
+		while (node != null) {
 
-			System.out.print(node.data+" ");
-			node=node.nextNode;
+			System.out.print(node.data + " ");
+			node = node.nextNode;
 		}
 	}
 
-	//Driver Method
+	// Driver Method
 	public static void main(String[] args) {
 
-		//Adding the data to the nodes
+		// Adding the data to the nodes
 		Node head = new Node(10);
 
 		Node secondNode = new Node(20);
@@ -68,7 +67,7 @@ public class Singly_DeleteNodesAt_Front_End_GivenPosition {
 
 		Node fifthNode = new Node(50);
 
-		//Adding References
+		// Adding References
 		head.nextNode = secondNode;
 
 		secondNode.nextNode = thirdNode;
@@ -94,6 +93,4 @@ public class Singly_DeleteNodesAt_Front_End_GivenPosition {
 		deleteAtGivenPosition(newHead, 30);
 		display(newHead);
 	}
-
-
 }

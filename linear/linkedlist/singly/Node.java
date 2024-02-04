@@ -12,7 +12,6 @@ public class Node {
 		this.nextNode = null;  // Optional as it's set to null by default
 	}
 	
-	// Constructor used in Singly_Reverse_The_Nodes
 	// Constructor to create a node with given data and a specified next node
 	public Node(int data, Node nextNode) {
 		this.data = data;

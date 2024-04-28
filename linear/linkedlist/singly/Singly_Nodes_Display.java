@@ -107,15 +107,15 @@ public class Singly_Nodes_Display {
 
 		System.out.println("Enter Individual Node's Data");
 
-		int key[] = new int[numberOfNodes1];
+		int key1[] = new int[numberOfNodes1];
 
 		for (int i = 0; i < numberOfNodes1; i++) {
-			key[i] = scanner.nextInt();
+			key1[i] = scanner.nextInt();
 		}
 
 		for (int i = numberOfNodes1 - 1; i >= 0; i--) {
 			// Creating nodes with user input and adding them at the front
-			headNode = new Node(key[i], headNode);
+			headNode = new Node(key1[i], headNode);
 		}
 
 		System.out.println();

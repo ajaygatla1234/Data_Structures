@@ -97,6 +97,7 @@ public class Singly_Nodes_Display {
 		System.out.println();
 		System.out.println("Displaying the user input Nodes");
 		display(headNode);
+		System.out.println("\n");
 
 		// Displays the user input using array 2 (just to have the idea)
 		int numberOfNodes1;

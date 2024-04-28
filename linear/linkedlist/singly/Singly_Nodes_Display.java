@@ -42,20 +42,20 @@ public class Singly_Nodes_Display {
 		// Displays the user input using array
 		Scanner scanner = new Scanner(System.in);
 
-		int numberOfNodes;
+		int numberOfNodes1;
 
 		System.out.println("Enter number of Nodes");
-		numberOfNodes = scanner.nextInt();
+		numberOfNodes1 = scanner.nextInt();
 
 		System.out.println("Enter Individual Node's Data");
 
-		int key[] = new int[numberOfNodes];
+		int key[] = new int[numberOfNodes1];
 
-		for (int i = 0; i < numberOfNodes; i++) {
+		for (int i = 0; i < numberOfNodes1; i++) {
 			key[i] = scanner.nextInt();
 		}
 
-		for (int i = numberOfNodes - 1; i >= 0; i--) {
+		for (int i = numberOfNodes1 - 1; i >= 0; i--) {
 			// Creating nodes with user input and adding them at the front
 			headNode = new Node(key[i], headNode);
 		}

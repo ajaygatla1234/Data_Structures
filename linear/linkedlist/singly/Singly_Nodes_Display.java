@@ -71,7 +71,7 @@ public class Singly_Nodes_Display {
 		int numberOfNodes2;
 		
 		System.out.println("Enter number of Nodes");
-		numberOfNodes1 = scanner.nextInt();
+		numberOfNodes2 = scanner.nextInt();
 		
 		System.out.println("Enter Individual Node's Data");
 		

@@ -62,7 +62,7 @@ public class Singly_Nodes_Display {
 				currentNode.nextNode=newNode;
 			}
 		}
-		System.out.println();
+		System.out.println("Displaying User Input Data along with hardcoded data");
 		display(headNode);
 		System.out.println("\n");
 

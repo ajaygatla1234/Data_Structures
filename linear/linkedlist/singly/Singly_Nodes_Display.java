@@ -66,7 +66,40 @@ public class Singly_Nodes_Display {
 		display(headNode);
 		System.out.println("\n");
 
-		// Displays the user input using array
+
+		// Displays the user input using array 1
+		int numberOfNodes1;
+		
+		System.out.println("Enter number of Nodes");
+		numberOfNodes1 = scanner.nextInt();
+		
+		System.out.println("Enter Individual Node's Data");
+		
+		int key[] = new int[numberOfNodes1];
+		
+		for (int i = 0; i < numberOfNodes1; i++) {
+		    key[i] = scanner.nextInt();
+		}
+		
+		Node lastNode = null; // Track the last node
+		
+		for (int i = 0; i < numberOfNodes1; i++) {
+		    Node newNode = new Node(key[i]);
+		
+		    if (headNode == null) {
+		        headNode = newNode;
+		        lastNode = headNode; // Update lastNode for the first node
+		    } else {
+		        lastNode.nextNode = newNode; // Append the new node to the last node
+		        lastNode = newNode; // Update lastNode to the new node
+		    }
+		}
+		
+		System.out.println();
+		System.out.println("Displaying the user input Nodes");
+		display(headNode);
+
+		// Displays the user input using array 2 (just to have the idea)
 		int numberOfNodes1;
 
 		System.out.println("Enter number of Nodes");

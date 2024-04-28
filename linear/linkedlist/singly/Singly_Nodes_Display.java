@@ -81,19 +81,18 @@ public class Singly_Nodes_Display {
 		    key[i] = scanner.nextInt();
 		}
 		
-		Node lastNode = null; // Track the last node
+		Node lastNode = headNode; // Track the last node
 		
-		for (int i = 0; i < numberOfNodes2; i++) {
-		    Node newNode = new Node(key[i]);
-		
-		    if (headNode == null) {
-		        headNode = newNode;
-		        lastNode = headNode; // Update lastNode for the first node
-		    } else {
-		        lastNode.nextNode = newNode; // Append the new node to the last node
-		        lastNode = newNode; // Update lastNode to the new node
-		    }
-		}
+		while (lastNode.nextNode != null) {
+			    lastNode = lastNode.nextNode; // Traverse the list to find the last node
+			}
+
+			for (int i = 0; i < numberOfNodes2; i++) {
+			    Node newNode = new Node(key[i]);
+
+			    lastNode.nextNode = newNode; // Append the new node to the last node
+			    lastNode = newNode; // Update lastNode to the new node
+			}
 		
 		System.out.println();
 		System.out.println("Displaying the user input Nodes");

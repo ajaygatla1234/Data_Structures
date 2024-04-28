@@ -55,11 +55,11 @@ public class Singly_Nodes_Display {
 				headNode=newNode;
 			}
 			else {
-				Node currentNode=head;
+				Node currentNode=headNode;
 				while(currentNode.nextNode!=null) {
 					currentNode=currentNode.nextNode;
 				}
-				cuNode.nextNode=newNode;
+				currentNode.nextNode=newNode;
 			}
 		}
 		System.out.println();

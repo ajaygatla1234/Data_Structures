@@ -64,6 +64,7 @@ public class Singly_Nodes_Display {
 		}
 		System.out.println();
 		display(headNode);
+		System.out.println("\n");
 
 		// Displays the user input using array
 		int numberOfNodes1;

@@ -1,5 +1,6 @@
 package com.ds.linear.linkedlist.singly;
 
+//In this code only insertAtFront method have return type
 public class Singly_InsertNodesAt_Front_End_GivenPosition {
 
 	// Initializing new head Node for Updating the singly list after adding new front node as head

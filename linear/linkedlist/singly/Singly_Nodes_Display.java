@@ -39,12 +39,10 @@ public class Singly_Nodes_Display {
 
 		System.out.println("\n");
 
-		// Displays the user input
+		// Displays the user input using array
 		Scanner scanner = new Scanner(System.in);
 
 		int numberOfNodes;
-
-		Node head = null;
 
 		System.out.println("Enter number of Nodes");
 		numberOfNodes = scanner.nextInt();
@@ -59,12 +57,12 @@ public class Singly_Nodes_Display {
 
 		for (int i = numberOfNodes - 1; i >= 0; i--) {
 			// Creating nodes with user input and adding them at the front
-			head = new Node(key[i], head);
+			headNode = new Node(key[i], headNode);
 		}
 
 		System.out.println();
 		System.out.println("Displaying the user input Nodes");
-		display(head);
+		display(headNode);
 
 		scanner.close();
 	}

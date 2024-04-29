@@ -60,7 +60,6 @@ public class Singly_InsertNodesAt_Front_End_GivenPosition_3 {
 				int i=nodeCounter()+1;
 				System.out.println("You can Add upto "+i+" Nodes, Including "+i+" as Last node");
 				return;
-				return;
 			}
 
 			Node currentNode1=previousNode.nextNode;

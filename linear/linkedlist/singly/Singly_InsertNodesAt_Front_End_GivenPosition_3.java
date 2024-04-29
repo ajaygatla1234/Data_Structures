@@ -57,6 +57,7 @@ public class Singly_InsertNodesAt_Front_End_GivenPosition_3 {
 			}
 			if (count != position - 1) {
 				System.out.println("Invalid position specified");
+				System.out.println("List has only "+nodeCounter()+" Nodes");
 				int i=nodeCounter()+1;
 				System.out.println("You can Add upto "+i+" Nodes, Including "+i+" as Last node");
 				return;

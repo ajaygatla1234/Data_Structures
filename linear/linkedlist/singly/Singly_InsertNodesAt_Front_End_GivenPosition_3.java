@@ -36,7 +36,7 @@ public class Singly_InsertNodesAt_Front_End_GivenPosition_3 {
 
 		}
 
-		else {
+		else {   //condition for adding node at given position including tail node
 			Node previousNode=head;
 			int count=1;
 			while(count<position-1 && previousNode.nextNode!=null) {  //if we want to add the node at 4th position, if we gave count<position, since 3 is less than 4, then previousNode is updated to 4th position, then Node will be added at 5th position, so position-1 is given

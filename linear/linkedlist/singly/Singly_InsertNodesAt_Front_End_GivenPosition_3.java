@@ -5,6 +5,17 @@ public class Singly_InsertNodesAt_Front_End_GivenPosition_3 {
 
 	private static Node head=null;
 
+	//This method used to count the number of nodes
+		public static int nodeCounter() {
+			Node cNode=head;
+			int counter=0;
+			while(cNode!=null) {
+				cNode=cNode.nextNode;
+				counter++;
+			}
+			return counter;
+		}
+
 	public static void insertAtHead(int data) {
 		Node newNode = new Node(data);
 		newNode.nextNode=head;
@@ -46,6 +57,9 @@ public class Singly_InsertNodesAt_Front_End_GivenPosition_3 {
 			}
 			if (count != position - 1) {
 				System.out.println("Invalid position specified");
+				int i=nodeCounter()+1;
+				System.out.println("You can Add upto "+i+" Nodes, Including "+i+" as Last node");
+				return;
 				return;
 			}
 

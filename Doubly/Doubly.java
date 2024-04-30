@@ -107,6 +107,7 @@ public class Doubly {
 		display();
 		insertAtGivenPosition(2, 5);
 		insertAtGivenPosition(100, 76);
+		insertAtGivenPosition(0, 0);
 		
 	}
 

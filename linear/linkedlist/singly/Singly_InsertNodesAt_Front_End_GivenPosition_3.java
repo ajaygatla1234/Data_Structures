@@ -100,6 +100,7 @@ public class Singly_InsertNodesAt_Front_End_GivenPosition_3 {
 		insertAtTail(50);
 		insertAtGivenPosition(4, 25);
 		insertAtGivenPosition(9, 40);
+		insertAtGivenPosition(0, 0);
 	}
 
 }

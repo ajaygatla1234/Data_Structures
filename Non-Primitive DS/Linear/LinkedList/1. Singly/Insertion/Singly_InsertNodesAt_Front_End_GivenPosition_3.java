@@ -101,6 +101,21 @@ public class Singly_InsertNodesAt_Front_End_GivenPosition_3 {
 		System.out.println();
 	}
 
+	public static void search(int data) {
+	    Node temp = head;
+	    int position = 1; // Position counter starts from 1 assuming the head is at position 1
+	    
+	    while (temp != null) {
+	        if (temp.data == data) {
+	            System.out.println("Found at position " + position);
+	            return;
+	        }
+	        temp = temp.nextNode; // Move to the next node
+	        position++; // Increment position counter
+	    }
+	    System.out.println("Not found");
+	}
+
 	public static void main(String[] args) {
 
 		head = new Node(10);
@@ -119,5 +134,7 @@ public class Singly_InsertNodesAt_Front_End_GivenPosition_3 {
 		insertAtGivenPosition(4, 25);
 		insertAtGivenPosition(9, 60);
 		insertAtGivenPosition(0, 0);
+
+		search(25);
 	}
 }

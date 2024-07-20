@@ -16,6 +16,9 @@ public class BinarySearch {
             }
         }
         return -1; // Return -1 if the target element is not found
+
+        //Time Complexity  : O(log n)
+        //Space Complexity : O(1)
     }
 
     // Recursive Binary Search
@@ -36,6 +39,9 @@ public class BinarySearch {
                 binarySearch_2(arr, searchElement, lowerIndex, mid - 1);
             }
         }
+
+        //Time Complexity  : O(log n)
+        //Space Complexity : O(log n)
     }
 
     public static void main(String[] args) {

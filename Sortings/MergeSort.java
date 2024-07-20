@@ -62,7 +62,9 @@ public class MergeSort {
 	 * Algorithm Performance Analysis:
 	 * Time Complexity:
 	 * worst & Average & Best - O(n log n)
-	 * Space Complexity - O(n)
+	 * Space Complexity - O(n)   (Auxiliary Space (for merging): O(n) : Recursive Call Stack Space: O(log n) : Overall Space Complexity: O(n))
+  	   (The space complexity is dominated by the space required for the temporary arrays used during the merge step. 
+      	    The recursion stack space contributes to the total space complexity, but its impact is relatively small compared to the space required for merging.)
 	 * Stable 
 	 * Number of comparisons - n-1
 	 * Number of swaps - The sort answer is that merge sort does not have swaps, or better stated is that it does not need swaps. We can create a temporary array that will be returned as the sum of the lengths of the arrays being merged in order 

@@ -10,7 +10,7 @@ Time Complexity :
 
 Space Complexity:
 -Space complexity measures the amount of memory an algorithm requires as a function of the input size. It includes both the memory used for storing data and the space used by auxiliary variables or recursive function calls.
-1. Constant Space Algorithm (O(1))        : array[0];
+1. Constant Space Algorithm (O(1))        : array[0]; (Bubble, Insertion, Selection)
 2. Linear Space Algorithm (O(n))          : Linear Search
 3. Quadratic Space Algorithm (O(n^2))
 4. Recursive Algorithm Space Complexity    : Recursion stack, which grows linearly with the input size. Ex:Factorial

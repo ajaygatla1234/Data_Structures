@@ -16,7 +16,7 @@ Space Complexity:
 4. Recursive Algorithm Space Complexity    : Recursion stack, which grows linearly with the input size. Ex:Factorial O(n)
 5. Logarithmic Space Complexity (O(log n)) : Logarithmic space complexity means that the amount of memory used by the algorithm grows logarithmically with respect to the size of the input. 
                                              This is usually seen in algorithms that reduce the problem size by a factor with each step, resulting in a logarithmic growth in the space required.
-                                             Ex: Binary Search
+                                             Ex: Binary Search (only when Recursion is used)
 
 
 

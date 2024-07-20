@@ -38,7 +38,7 @@ public class BubbleSort {
 	//Algorithm Performance Analysis
 	//Time Complexity
 	//worst & Average - O(n^2) 
-	//Best-O(n)(only if we use flag or check whether it is already sorted or not)
+	//Best-O(n)(only if we use flag or check whether it is already sorted or not)(if the array is already sorted only the inner for loop compares all the values  so O(n))
 	//Space Complexity - O(1) - Constant space complexity (inplace)
 	//Stable
 	//Number of comparisons - n^2

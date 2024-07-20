@@ -23,3 +23,5 @@ Space Complexity:
                                              Ex: Binary Search (only when Recursion is used)
 
 -The space complexity of an algorithm can depend on whether it is implemented recursively or iteratively.
+
+O(logn) is considered better than O(n) in terms of efficiency.

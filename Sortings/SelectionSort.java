@@ -26,8 +26,7 @@ public class SelectionSort {
 	/*
 	 * Algorithm Performance Analysis
 	 * Time Complexity
-	 * worst & Average - O(n^2)
-	 * Best-O(n^2)
+	 * worst, Average & Best Case - O(n^2)
 	 * Space Complexity - O(1) - Constant space complexity (inplace)
 	 * Not-Stable (in this particular code, we are not giving any consideration of the relative order of elements while swapping, No guarantee that array remains stable) (if we want we can make it stable by taking special care Programitically with extra steps)
   	 * Go through this link to understand why it is not stable : https://youtu.be/19YOpMMtLx8?feature=shared

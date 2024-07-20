@@ -8,6 +8,9 @@ public class LinearSearch {
         return -1; // Return -1 if the target element is not found
     }
 
+    //Time Complexity  : O(n)
+    //Space Complexity : O(1)
+
     public static void main(String[] args) {
         int[] arr = { 5, 3, 8, 1, 9, 4 };
         int target = 8;

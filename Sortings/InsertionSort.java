@@ -23,7 +23,7 @@ public class InsertionSort {
 	 * Algorithm Performance Analysis:
 	 * Time Complexity:
 	 * worst & Average - O(n^2)
-	 * Best-O(n)(if the array is already sorted)
+	 * Best-O(n)(if the array is already sorted) (in this case only for loop gets executed, while loop will not gets executed since no shifts Required)
 	 * Space Complexity - O(1) - Constant space complexity (inplace)
 	 * Stable 
 	 * Number of comparisons - n^2/4(Average), n^2/2(Worst)

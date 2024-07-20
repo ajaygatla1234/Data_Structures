@@ -1,5 +1,6 @@
 Time Complexity : 
 -It is a measure of the number of basic operations (like comparisons, additions, or multiplications) an algorithm performs in relation to the size of the input data.
+
 1. Constant Time Algorithm (O(1))        : array[0];
 2. Linear Time Algorithm (O(n))          : Linear Search
 3. Quadratic Time Algorithm (O(n^2))     : Nested Loops (involving the square ) (array scales quadratically with the size of the array.) (Bubble, Insertion, Selection)
@@ -7,6 +8,9 @@ Time Complexity :
                                           or
                                           Logarithmic time algorithms often arise in scenarios where hierarchical structures are involved. 
                                           This is because hierarchical structures, like trees, allow for efficient division of the problem space.
+
+-The time complexity of an algorithm generally does not depend on whether it is implemented recursively or iteratively. 
+Instead, it depends on the nature of the algorithm and how it processes the input data.
 
 Space Complexity:
 -Space complexity measures the amount of memory an algorithm requires as a function of the input size. It includes both the memory used for storing data and the space used by auxiliary variables or recursive function calls.

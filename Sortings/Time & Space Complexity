@@ -13,8 +13,8 @@ Space Complexity:
 1. Constant Space Algorithm (O(1)) 
 2. Linear Space Algorithm (O(n))
 3. Quadratic Space Algorithm (O(n^2))
-4. Recursive Algorithm Space Complexity : 
-5. Logarithmic Space Complexity (O(log n))
+4. Recursive Algorithm Space Complexity    : Recursion stack, which grows linearly with the input size. Ex:Factorial, fibonocci
+5. Logarithmic Space Complexity (O(log n)) : 
 
 
 

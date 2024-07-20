@@ -21,3 +21,5 @@ Space Complexity:
 5. Logarithmic Space Complexity (O(log n)) : Logarithmic space complexity means that the amount of memory used by the algorithm grows logarithmically with respect to the size of the input. 
                                              This is usually seen in algorithms that reduce the problem size by a factor with each step, resulting in a logarithmic growth in the space required.
                                              Ex: Binary Search (only when Recursion is used)
+
+-The space complexity of an algorithm can depend on whether it is implemented recursively or iteratively.

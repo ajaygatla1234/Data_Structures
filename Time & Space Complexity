@@ -24,4 +24,5 @@ Space Complexity:
 
 -The space complexity of an algorithm can depend on whether it is implemented recursively or iteratively.
 
-O(logn) is considered better than O(n) in terms of efficiency.
+Time & Space Complexity:
+When comparing O(n) and O(logn), whether in terms of time complexity or space complexity, O(logn) is typically considered better due to its more efficient growth rate. 
